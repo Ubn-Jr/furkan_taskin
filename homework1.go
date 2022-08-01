@@ -8,9 +8,11 @@ ALDIKLARI MÜHİMMAT KAPASİTELERİNİN TOPLAMININ İNCELENDİĞİ BÖLÜM..*/
 func pistols(canik int, glock int, sig int) int {
 	magCapacity := canik + glock + sig
 	return magCapacity
+
+}
+
 	/*MARKALARIN ŞARJÖR KAPASİTELERİNİN AVRUPA STANDARTLARINA
 	  UYGUN OLUP OLMADIĞININ İNCELENDİĞİ BÖLÜM..*/
-}
 func euStandCap(canik int, glock int, sig int) int {
 
 	if canik > 15 {
@@ -30,10 +32,11 @@ func euStandCap(canik int, glock int, sig int) int {
 	}
 
 	return pistols(canik, glock, sig)
-	/*MARKALARIN AĞIRLIKLARININ AVRUPA STANDARTLARINA
-	  UYGUN OLUP OLMADIĞININ İNCELENDİĞİ BÖLÜM..*/
+
 }
 
+	/*MARKALARIN AĞIRLIKLARININ AVRUPA STANDARTLARINA
+	  UYGUN OLUP OLMADIĞININ İNCELENDİĞİ BÖLÜM..*/
 func weigth(glockw float32, canikw float32, sigw float32) {
 
 	if 200 < glockw && glockw < 700 {
@@ -62,10 +65,11 @@ func weigth(glockw float32, canikw float32, sigw float32) {
 		}
 
 	}
-	/*MARKALARIN NAMLU UZUNLUKLARININ AVRUPA STANDARTLARINA
-	  UYGUN OLUP OLMADIĞIN İNCELENDİĞİ BÖLÜM..*/
+
 }
 
+	/*MARKALARIN NAMLU UZUNLUKLARININ AVRUPA STANDARTLARINA
+	  UYGUN OLUP OLMADIĞIN İNCELENDİĞİ BÖLÜM..*/
 func euBarrel(canikBar int, glockBar int, sigBar int) {
 
 	var barrelLenght int = 102
@@ -89,10 +93,15 @@ func euBarrel(canikBar int, glockBar int, sigBar int) {
 			fmt.Println("Sig Namlu Fazlalığı mm =", barrelLenght-sigBar)
 		}
 	}
+	
+	//TODO
+	//return anahtar kelimesinin burada bir işlevi var mıdır ?
 	return
-	//MARKALARIN FİRMA YAŞLARININ İNCELENDİĞİ BÖLÜM..
+	
 
 }
+
+//MARKALARIN FİRMA YAŞLARININ İNCELENDİĞİ BÖLÜM..
 func firmAge(canikComp, glockComp, sigComp int) int {
 
 	var year int = 2022
