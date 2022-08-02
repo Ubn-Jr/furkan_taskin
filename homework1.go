@@ -94,11 +94,6 @@ func euBarrel(canikBar int, glockBar int, sigBar int) {
 		}
 	}
 	
-	//TODO
-	//return anahtar kelimesinin burada bir işlevi var mıdır ?
-	return
-	
-
 }
 
 //MARKALARIN FİRMA YAŞLARININ İNCELENDİĞİ BÖLÜM..
